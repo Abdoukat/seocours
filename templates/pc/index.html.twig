@@ -1,20 +1,210 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Hello PcController!{% endblock %}
+{% block head %}
+<meta name="robots" content="follow, index">
+<meta name="keywords" content="Mot-clé 1, Mot-clé 2, Mot-clé 3">
+<meta name="description"
+    content="Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis.">
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+        <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/wamp64/www/seoCours/src/Controller/PcController.php'|file_link(0) }}">src/Controller/PcController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/wamp64/www/seoCours/templates/pc/index.html.twig'|file_link(0) }}">templates/pc/index.html.twig</a></code></li>
-    </ul>
-</div>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a href="{{path('app_home')}}">Home</a></li>
+                <li><a href="{{path('app_about')}}">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+
+                {# <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> #}
+                <li><a class="active" href="{{path('app_contact')}}">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        <a href="courses.html" class="get-started-btn">Get Started</a>
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main" data-aos="fade-in">
+    <div class="container" data-aos="fade-up">
+        <div class="row mt-5">
+            <div id="counts" class="counts section-bg" data-aos="fade-in">
+                <div class="container">
+
+                    <h4>a. Informations sur l'entreprise : </h4>
+
+                    <p>Nom de l'entreprise : ThéTipTop Statut juridique : Société Anonyme (SA) Adresse du siège social :
+                        18 rue Léon Frot, 75011 Paris Numéro de téléphone : +33 6 12 34 56 78 Adresse e-mail :
+                        contact@thetiptop.fr Capital social : 50 000 euros Numéro RCS : RCS PARIS B 517 403 572 Numéro
+                        SIRET : 552 178 639 00132 TVA intracommunautaire : FR 32 123456789
+                    </p>
+                    </p>
+
+                    <h4>b. Responsable de la publication : 
+                    </h4>
+
+                    <p>Nom du responsable de la publication : Éric BOURDAN Fonction : Directeur Général
+                    </p>
+                    </p>
+
+                    <h4>c. Hébergement du site :
+                    </h4>
+
+                    <p>Nom de l'hébergeur : Ionos Adresse : 7 Place de la Gare, 57200 Sarreguemines, France Numéro de
+                        téléphone : +33 9 70 80 89 11
+                        .</p>
+
+                    <h4>d. Propriété intellectuelle : 
+                    </h4>
+
+                    <p>Le contenu du site (textes, images, vidéos, etc.) est protégé par le droit d'auteur et la
+                        propriété intellectuelle. Toute reproduction ou utilisation du contenu sans autorisation est
+                        strictement interdite.
+                    </p>
+
+                    <h4>e. Données personnelles : 
+                    </h4>
+
+                    <p>Le site collecte et traite des données personnelles des utilisateurs (nom, prénom, adresse,
+                        e-mail, etc.) conformément aux dispositions de la loi n°78-17 du 6 janvier 1978 relative à
+                        l'informatique, aux fichiers et aux libertés. Les utilisateurs ont un droit d'accès, de
+                        rectification et de suppression des données les concernant en envoyant un e-mail à l'adresse
+                        contact@thetiptop.fr.
+                    </p>
+
+                    <h4>f. Cookies : 
+                    </h4>
+
+                    <p>Le site utilise des cookies pour améliorer l'expérience utilisateur et collecter des données
+                        statistiques. Les utilisateurs peuvent désactiver les cookies en modifiant les paramètres de
+                        leur navigateur.
+                    </p>
+
+                    <h4>g. Liens hypertextes : 
+                    </h4>
+
+                    <p>Le site peut contenir des liens hypertextes vers des sites tiers. ThéTipTop ne peut être tenu
+                        responsable du contenu de ces sites.
+                    </p>
+
+                    <h4>h. Droit applicable et juridiction compétente : 
+                    </h4>
+
+                    <p>Le site et son contenu sont soumis au droit français. Tout litige relatif au site sera de la
+                        compétence exclusive des tribunaux français.
+                    </p>
+
+
+                </div>
+            </div><!-- End Breadcrumbs -->
+        </div>
+    </div>
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Mentor</h3>
+                    <p>
+                        A108 Adam Street <br>
+                        New York, NY 535022<br>
+                        United States <br><br>
+                        <strong>Phone:</strong> +1 5589 55488 55<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form action="" method="post">
+                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+        <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 {% endblock %}
