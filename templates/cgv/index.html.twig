@@ -9,184 +9,104 @@
 {% endblock %}
 
 {% block body %}
-<!-- ======= Header ======= -->
-    {% block header %}
-      {{ parent() }}
-    {% endblock %}
-<!-- ======= End Header ======= -->
+	<!-- ======= Header ======= -->
+		{% block header %}
+		{{ parent() }}
+		{% endblock %}
+	<!-- ======= End Header ======= -->
+	<main id="main" data-aos="fade-in">
+	<div class="container" data-aos="fade-up">
+		<div class="row mt-5">
+		<div id="counts" class="counts section-bg" data-aos="fade-in">
+			<div class="container">
+			<h2>Article 1 : Champ d'application</h2>
 
-<main id="main" data-aos="fade-in">
-  <div class="container" data-aos="fade-up">
-    <div class="row mt-5">
-      <div id="counts" class="counts section-bg" data-aos="fade-in">
-        <div class="container">
-          <h2>Article 1 : Champ d'application</h2>
+			<p>Les présentes conditions générales de vente s'appliquent à toutes les ventes de produits effectuées par la
+				société ThéTipTop sur son site internet et en magasin.</p>
+			</p>
 
-          <p>Les présentes conditions générales de vente s'appliquent à toutes les ventes de produits effectuées par la
-            société ThéTipTop sur son site internet et en magasin.</p>
-          </p>
+			<h2>Article 2 : Produits</h2>
 
-          <h2>Article 2 : Produits</h2>
+			<p>Les produits proposés à la vente sont ceux figurant sur le site internet et en magasin de la société
+				ThéTipTop. Ces produits sont décrits avec la plus grande exactitude possible.</p>
+			</p>
 
-          <p>Les produits proposés à la vente sont ceux figurant sur le site internet et en magasin de la société
-            ThéTipTop. Ces produits sont décrits avec la plus grande exactitude possible.</p>
-          </p>
+			<h2>Article 3 : Prix</h2>
 
-          <h2>Article 3 : Prix</h2>
+			<p>Les prix des produits sont indiqués en euros toutes taxes comprises (TTC). La société ThéTipTop se réserve
+				le droit de modifier ses prix à tout moment mais s'engage à appliquer les tarifs en vigueur indiqués au
+				moment de la commande.</p>
 
-          <p>Les prix des produits sont indiqués en euros toutes taxes comprises (TTC). La société ThéTipTop se réserve
-            le droit de modifier ses prix à tout moment mais s'engage à appliquer les tarifs en vigueur indiqués au
-            moment de la commande.</p>
+			<h2>Article 4 : Commande</h2>
 
-          <h2>Article 4 : Commande</h2>
+			<p>Le client effectue sa commande en ligne ou en magasin. Toute commande vaut acceptation des prix et
+				description des produits disponibles à la vente.</p>
 
-          <p>Le client effectue sa commande en ligne ou en magasin. Toute commande vaut acceptation des prix et
-            description des produits disponibles à la vente.</p>
+			<h2>Article 5 : Paiement</h2>
 
-          <h2>Article 5 : Paiement</h2>
+			<p>Le paiement des commandes s'effectue en ligne par carte bancaire ou en magasin par carte bancaire, espèces
+				ou chèque. La société ThéTipTop se réserve le droit de suspendre toute commande en cas de refus
+				d'autorisation de paiement par carte bancaire de la part des organismes officiellement accrédités.</p>
 
-          <p>Le paiement des commandes s'effectue en ligne par carte bancaire ou en magasin par carte bancaire, espèces
-            ou chèque. La société ThéTipTop se réserve le droit de suspendre toute commande en cas de refus
-            d'autorisation de paiement par carte bancaire de la part des organismes officiellement accrédités.</p>
+			<h2>Article 6 : Livraison</h2>
 
-          <h2>Article 6 : Livraison</h2>
+			<p>Les produits commandés sont livrés à l'adresse de livraison indiquée par le client lors de la commande en
+				ligne ou remis en magasin. Les délais de livraison sont indiqués sur le site internet et en magasin. En cas
+				de retard de livraison, le client en sera informé par email ou par téléphone.</p>
 
-          <p>Les produits commandés sont livrés à l'adresse de livraison indiquée par le client lors de la commande en
-            ligne ou remis en magasin. Les délais de livraison sont indiqués sur le site internet et en magasin. En cas
-            de retard de livraison, le client en sera informé par email ou par téléphone.</p>
+			<h2>Article 7 : Retours et remboursements</h2>
 
-          <h2>Article 7 : Retours et remboursements</h2>
+			<p>Le client dispose d'un délai de 14 jours à compter de la réception des produits pour exercer son droit de
+				rétractation. Les produits doivent être retournés en parfait état, dans leur emballage d'origine et
+				accompagnés du bon de livraison ou de la facture correspondante. Les frais de retour sont à la charge du
+				client. En cas d'exercice du droit de rétractation, la société ThéTipTop remboursera au client les sommes
+				versées dans un délai de 14 jours à compter de la réception des produits retournés.</p>
 
-          <p>Le client dispose d'un délai de 14 jours à compter de la réception des produits pour exercer son droit de
-            rétractation. Les produits doivent être retournés en parfait état, dans leur emballage d'origine et
-            accompagnés du bon de livraison ou de la facture correspondante. Les frais de retour sont à la charge du
-            client. En cas d'exercice du droit de rétractation, la société ThéTipTop remboursera au client les sommes
-            versées dans un délai de 14 jours à compter de la réception des produits retournés.</p>
+			<h2>Article 8 : Garanties</h2>
 
-          <h2>Article 8 : Garanties</h2>
+			<p>La société ThéTipTop garantit que les produits livrés sont conformes aux spécifications indiquées sur le
+				site internet et en magasin. En cas de non-conformité avérée, la société ThéTipTop procédera au remplacement
+				du produit ou au remboursement de son prix.</p>
 
-          <p>La société ThéTipTop garantit que les produits livrés sont conformes aux spécifications indiquées sur le
-            site internet et en magasin. En cas de non-conformité avérée, la société ThéTipTop procédera au remplacement
-            du produit ou au remboursement de son prix.</p>
+			<h2>Article 9 : Propriété intellectuelle </h2>
 
-          <h2>Article 9 : Propriété intellectuelle </h2>
+			<p>Tous les éléments du site www.thetiptop.com sont et restent la propriété intellectuelle et exclusive de la
+				société ThéTipTop. Personne n’est autorisé à reproduire, exploiter, rediffuser ou utiliser à quelque titre
+				que ce soit, même partiellement, des éléments du site qu’ils soient logiciels, visuels ou sonores. Tout lien
+				simple ou par hypertexte est strictement interdit sans un accord écrit exprès de la société ThéTipTop.</p>
 
-          <p>Tous les éléments du site www.thetiptop.com sont et restent la propriété intellectuelle et exclusive de la
-            société ThéTipTop. Personne n’est autorisé à reproduire, exploiter, rediffuser ou utiliser à quelque titre
-            que ce soit, même partiellement, des éléments du site qu’ils soient logiciels, visuels ou sonores. Tout lien
-            simple ou par hypertexte est strictement interdit sans un accord écrit exprès de la société ThéTipTop.</p>
+			<h2>Article 10 : Données personnelles </h2>
 
-          <h2>Article 10 : Données personnelles </h2>
+			<p>La société ThéTipTop collecte les informations personnelles de ses clients pour la gestion des commandes et
+				des relations commerciales. Conformément à la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux
+				fichiers et aux libertés, le client dispose d’un droit d’accès, de modification, de rectification et de
+				suppression des données qui le concernent. Pour exercer ce droit, le client peut contacter la société
+				ThéTipTop par courrier électronique à l’adresse suivante : contact@thetiptop.com ou par courrier postal à
+				l’adresse suivante : ThéTipTop, 10 Rue de la Paix, 75002 Paris.</p>
 
-          <p>La société ThéTipTop collecte les informations personnelles de ses clients pour la gestion des commandes et
-            des relations commerciales. Conformément à la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux
-            fichiers et aux libertés, le client dispose d’un droit d’accès, de modification, de rectification et de
-            suppression des données qui le concernent. Pour exercer ce droit, le client peut contacter la société
-            ThéTipTop par courrier électronique à l’adresse suivante : contact@thetiptop.com ou par courrier postal à
-            l’adresse suivante : ThéTipTop, 10 Rue de la Paix, 75002 Paris.</p>
+			<h2>Article 11 : Responsabilité</h2>
 
-          <h2>Article 11 : Responsabilité</h2>
+			<p>La société ThéTipTop ne saurait être tenue pour responsable de l’inexécution du contrat conclu en cas de
+				force majeure, de perturbation ou de grève totale ou partielle notamment des services postaux et moyens de
+				transport et/ou communications, inondation, incendie. La société ThéTipTop n’encourra aucune responsabilité
+				pour tous dommages indirects du fait des présentes, perte d’exploitation, perte de profit, perte de chance,
+				dommages ou frais, qui pourraient survenir du fait de l’achat des produits. Des liens hypertextes peuvent
+				renvoyer vers d’autres sites que le site www.thetiptop.fr . La société ThéTipTop dégage toute responsabilité
+				dans le cas où le contenu de ces sites contreviendrait aux dispositions légales et réglementaires en
+				vigueur.</p>
 
-          <p>La société ThéTipTop ne saurait être tenue pour responsable de l’inexécution du contrat conclu en cas de
-            force majeure, de perturbation ou de grève totale ou partielle notamment des services postaux et moyens de
-            transport et/ou communications, inondation, incendie. La société ThéTipTop n’encourra aucune responsabilité
-            pour tous dommages indirects du fait des présentes, perte d’exploitation, perte de profit, perte de chance,
-            dommages ou frais, qui pourraient survenir du fait de l’achat des produits. Des liens hypertextes peuvent
-            renvoyer vers d’autres sites que le site www.thetiptop.fr . La société ThéTipTop dégage toute responsabilité
-            dans le cas où le contenu de ces sites contreviendrait aux dispositions légales et réglementaires en
-            vigueur.</p>
+			<h2>Article 12 : Droit applicable – Litiges </h2>
 
-          <h2>Article 12 : Droit applicable – Litiges </h2>
-
-          <p>Les présentes conditions générales de vente sont soumises à la loi française. Tout litige relatif à
-            l’interprétation, à l’exécution ou à la rupture du contrat conclu entre la société ThéTipTop et le client,
-            même en cas de pluralité de défendeurs, sera, à défaut d’accord amiable, de la compétence exclusive des
-            tribunaux français.</p>
-        </div>
-      </div><!-- End Breadcrumbs -->
-    </div>
-  </div>
-</main><!-- End #main -->
-
-<!-- ======= Footer ======= -->
-<footer id="footer">
-
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6 footer-contact">
-          <h3>Mentor</h3>
-          <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
-          </p>
-        </div>
-
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Join Our Newsletter</h4>
-          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          <form action="" method="post">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="container d-md-flex py-4">
-
-    <div class="me-md-auto text-center text-md-start">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Mentor</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-    <div class="social-links text-center text-md-right pt-3 pt-md-0">
-      <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-      <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-    </div>
-  </div>
-</footer><!-- End Footer -->
-
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-    class="bi bi-arrow-up-short"></i></a>
-
-
+			<p>Les présentes conditions générales de vente sont soumises à la loi française. Tout litige relatif à
+				l’interprétation, à l’exécution ou à la rupture du contrat conclu entre la société ThéTipTop et le client,
+				même en cas de pluralité de défendeurs, sera, à défaut d’accord amiable, de la compétence exclusive des
+				tribunaux français.</p>
+			</div>
+		</div><!-- End Breadcrumbs -->
+		</div>
+	</div>
+	</main><!-- End #main -->
+	{{ include('_footer.html.twig') }}
+	<div id="preloader"></div>
+	<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 {% endblock %}
