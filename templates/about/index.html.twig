@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}A Propos{% endblock %}
+{% block title %}{{controller_name}}{% endblock %}
 {% block head %}
 <meta name="robots" content="follow, index">
-<meta name="keywords" content="Mot-clé 1, Mot-clé 2, Mot-clé 3">
-<meta name="description" content="Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis.">
+<meta name="keywords" content="Thé artisanal, thé bio, entreprise de thé, histoire du thé, thé de qualité, mission de l'entreprise, respect de l'environnement, entreprise éco-responsable, valeurs de l'entreprise, qualité du thé, durabilité, bien-être.">
+<meta name="description" content="Découvrez l'histoire, la mission et les valeurs de notre entreprise de thé artisanal et bio. Apprenez-en plus sur notre engagement envers la qualité, la durabilité et le bien-être de nos clients.">
 {% endblock %}
 {% block body %}
 	<!-- ======= Header ======= -->
@@ -16,8 +16,8 @@
 		<!-- ======= Breadcrumbs ======= -->
 		<div class="breadcrumbs" data-aos="fade-in">
 		<div class="container">
-			<h2>About Us</h2>
-			<p>Est dolorum ut non facere possimus quibusdam eligendi voluptatem. Quia id aut similique quia voluptas sit quaerat debitis. Rerum omnis ipsam aperiam consequatur laboriosam nemo harum praesentium. </p>
+			<h2>{{ 'About Us' | trans }}</h2>
+			<p style="font-size : 16px;">{{ 'About_description' | trans }}</p>
 		</div>
 		</div><!-- bonjour zbdellah -->
 
@@ -30,20 +30,12 @@
 				<img src="assets/img/about.jpg" class="img-fluid" alt="">
 			</div>
 			<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-				<h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-				<p class="fst-italic">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-				magna aliqua.
-				</p>
-				<ul>
-				<li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-				<li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-				<li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-				</ul>
+				<h3>{{ 'Our History' | trans }}</h3>
 				<p>
-				Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+					ThéTipTop est passionné de fournir à ses clients un thé de haute qualité qui est à la fois sain et délicieux et est fier de son engagement à n'utiliser que les meilleurs ingrédients biologiques pour créer leurs thés en utilisant des méthodes traditionnelles pour fabriquer chaque mélange à la main et en veillant à ce que chaque tasse de thé soit un équilibre parfait entre saveur et arôme.
+					Leurs thés proviennent de fermes durables qui privilégient la préservation de l'environnement, les pratiques de commerce équitable et le bien-être de leurs travailleurs. En travaillant avec ces fermes, la marque veut créer un impact positif sur le monde et soutenir les communautés locales.
+					La maison du thé offre une grande variété de mélanges, y compris des thés classiques comme le thé vert et le thé noir, ainsi que des mélanges uniques qui incorporent des herbes, des fruits et des épices. Ces thés sont conçus pour répondre à différentes préférences et humeurs, allant de calmant et relaxant à énergisant et revigorant.
 				</p>
-
 			</div>
 			</div>
 
@@ -58,22 +50,22 @@
 
 			<div class="col-lg-3 col-6 text-center">
 				<span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
-				<p>Students</p>
+				<p>{{ 'Products' | trans }}</p>
 			</div>
 
 			<div class="col-lg-3 col-6 text-center">
 				<span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
-				<p>Courses</p>
+				<p>{{ 'Experiences' | trans }}</p>
 			</div>
 
 			<div class="col-lg-3 col-6 text-center">
 				<span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
-				<p>Events</p>
+				<p>{{ 'Producers' | trans }}</p>
 			</div>
 
 			<div class="col-lg-3 col-6 text-center">
-				<span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-				<p>Trainers</p>
+				<span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+				<p>{{ 'Stores' | trans}}</p>
 			</div>
 
 			</div>
@@ -86,8 +78,8 @@
 		<div class="container" data-aos="fade-up">
 
 			<div class="section-title">
-			<h2>Testimonials</h2>
-			<p>What are they saying</p>
+			<h2>{{ 'Testimonials' | trans }}</h2>
+			<p>{{ 'What are they saying' | trans }}</p>
 			</div>
 
 			<div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">

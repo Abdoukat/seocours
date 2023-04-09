@@ -50,8 +50,9 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                 <li><a {% if app.request.attributes.get('_route') == 'app_home' %}class="active"{% endif %} href="{{path('app_home')}}">{{ 'Home' | trans }}</a></li>
-                <li><a {% if app.request.attributes.get('_route') == 'app_about' %}class="active"{% endif %} href="{{path('app_about')}}">{{'About'|trans}}</a></li>
-                <li><a {% if app.request.attributes.get('_route') == 'app_contact' %}class="active"{% endif %} href="{{path('app_contact')}}">{{'Contact'|trans}}</a></li>
+                <li><a {% if app.request.attributes.get('_route') == 'app_about' %}class="active"{% endif %} href="{{path('app_about')}}">{{'About' | trans}}</a></li>
+                <li><a {% if app.request.attributes.get('_route') == 'app_blog' %}class="active"{% endif %} href="{{path('app_blog')}}">{{'Blog' | trans}}</a></li>
+                <li><a {% if app.request.attributes.get('_route') == 'app_contact' %}class="active"{% endif %} href="{{path('app_contact')}}">{{'Contact' | trans}}</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
